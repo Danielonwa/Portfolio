@@ -87,6 +87,37 @@ img{display:block;max-width:100%}
 .cursor{color:var(--accent);animation:blink .8s infinite;font-family:'JetBrains Mono',monospace}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .hero-bio{color:var(--muted);font-size:15px;line-height:1.8;max-width:460px;margin-bottom:28px}
+/* ======== MOBILE RESPONSIVENESS ======== */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-h, 60px) + 40px); /* Adjust based on your nav height */
+    padding-bottom: 60px;
+  }
+  
+  .hero-inner {
+    grid-template-columns: 1fr; /* Switch to a single column */
+    gap: 40px;
+    text-align: center; /* Center text on mobile */
+  }
+
+  .hero-title {
+    justify-content: center; /* Center the typing text flexbox */
+  }
+
+  .hero-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-btns {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
 
 /* skills marquee */
 .skills-wrap{overflow:hidden;margin-bottom:32px;position:relative}
