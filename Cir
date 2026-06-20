@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitol Insurance Restorations | Maryland's Storm Damage & Roofing Experts</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0F2C59',
+                        brandGold: '#DAC0A3',
+                        brandLight: '#F8F0E5',
+                        brandAccent: '#E11D48'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <!-- Top Info Bar -->
+    <div class="bg-brandBlue text-white py-2 px-4 text-sm hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <span class="mr-6"><i class="fa-solid fa-location-dot text-brandGold mr-2"></i> 801 Mallet Hill Ln, Millersville, MD 21108</span>
+                <span><i class="fa-solid fa-clock text-brandGold mr-2"></i> Mon - Fri: 7:00 AM - 8:00 PM</span>
+            </div>
+            <div>
+                <a href="tel:18004655805" class="font-bold hover:text-brandGold transition"><i class="fa-solid fa-phone mr-2"></i> +1 800-465-5805</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex flex-col justify-center">
+                        <span class="text-2xl font-black text-brandBlue tracking-tight">CAPITOL</span>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-brandAccent -mt-1">Insurance Restorations</span>
+                    </div>
+                    <div class="hidden md:ml-10 md:flex space-x-8 font-medium">
+                        <a href="#services" class="text-gray-600 hover:text-brandBlue transition">Our Services</a>
+                        <a href="#why-us" class="text-gray-600 hover:text-brandBlue transition">Why Choose Us</a>
+                        <a href="#process" class="text-gray-600 hover:text-brandBlue transition">Insurance Process</a>
+                        <a href="#testimonials" class="text-gray-600 hover:text-brandBlue transition">Reviews</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <a href="#contact" class="bg-brandAccent text-white px-6 py-3 rounded-md font-bold hover:bg-red-700 transition shadow-md">
+                        Free Inspection
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brandBlue focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Hidden by default -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#services" class="block py-2 text-gray-700 font-medium">Our Services</a>
+            <a href="#why-us" class="block py-2 text-gray-700 font-medium">Why Choose Us</a>
+            <a href="#process" class="block py-2 text-gray-700 font-medium">Insurance Process</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 font-medium">Reviews</a>
+            <a href="#contact" class="block bg-brandAccent text-white text-center py-3 rounded-md font-bold">Free Inspection</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-brandBlue text-white overflow-hidden">
+        <!-- Background Overlay Pattern/Image placeholder -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 lg:pt-32 lg:pb-40 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-blue-950 text-brandGold px-4 py-1.5 rounded-full text-sm font-semibold border border-blue-900">
+                        <i class="fa-solid fa-award"></i> GAF Master Elite® Roofing Contractors
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
+                        Storm Damage? We Handle Your <span class="text-brandGold">Roof & Insurance</span> From Start to Finish.
+                    </h1>
+                    <p class="text-lg text-gray-300 max-w-xl">
+                        Don't stress over complex insurance claims. Capitol Insurance Restorations advocates for Maryland homeowners to secure premium roof, siding, and gutter replacements at minimal out-of-pocket costs.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#contact" class="bg-brandAccent text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-red-700 transition shadow-lg inline-flex items-center gap-3">
+                            Book Free Inspection <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:18004655805" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-white hover:text-brandBlue transition inline-flex items-center gap-3">
+                            <i class="fa-solid fa-phone"></i> Call 24/7 Support
+                        </a>
+                    </div>
+                </div>
+                <!-- Trust Badge Hero Card -->
+                <div class="lg:col-span-5 bg-white text-gray-900 rounded-xl p-8 shadow-2xl border border-gray-100">
+                    <div class="flex items-center gap-1 text-yellow-400 text-xl mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span class="text-gray-600 font-bold text-sm ml-2">5.0 Google Rating</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brandBlue mb-4">Maryland's Top-Rated Restoration Team</h3>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> <span><strong>A+ BBB Accredited</strong> Business</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> <span><strong>Expert Negotiators:</strong> We handle the maze of insurance paperwork for you.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> <span><strong>Premium Material Warranties:</strong> Featuring GAF Golden Pledge® Protection.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Services -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlue">Our Specialized Structural Restoration Services</h2>
+            <p class="text-gray-600">From precision assessments to complete property reconstruction, we protect your home against the elements with elite craftsmanship.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-100">
+                <div class="h-3 bg-brandBlue"></div>
+                <div class="p-8 space-y-4">
+                    <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-lg flex items-center justify-center text-2xl font-bold"><i class="fa-solid fa-house-chimney-crack"></i></div>
+                    <h3 class="text-2xl font-bold text-brandBlue">Storm Damage & Roofing</h3>
+                    <p class="text-gray-600">Comprehensive options including structural tune-ups, advanced moisture control, and full roof systems optimized to extend longevity.</p>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-100">
+                <div class="h-3 bg-brandGold"></div>
+                <div class="p-8 space-y-4">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-700 rounded-lg flex items-center justify-center text-2xl font-bold"><i class="fa-solid fa-border-all"></i></div>
+                    <h3 class="text-2xl font-bold text-brandBlue">Siding & Gutters</h3>
+                    <p class="text-gray-600">Advanced thermal protection and clean gutter design layouts built to secure your foundation and amplify your home's exterior curb appeal.</p>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-100">
+                <div class="h-3 bg-brandAccent"></div>
+                <div class="p-8 space-y-4">
+                    <div class="w-12 h-12 bg-red-50 text-brandAccent rounded-lg flex items-center justify-center text-2xl font-bold"><i class="fa-solid fa-building"></i></div>
+                    <h3 class="text-2xl font-bold text-brandBlue">Commercial Renovations</h3>
+                    <p class="text-gray-600">Full-scale commercial building exterior and interior modifications optimized for business scalability, aesthetics, and code-compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 4-Step Insurance Insurance Process -->
+    <section id="process" class="bg-brandLight py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlue">How We Help You Win Your Insurance Claim</h2>
+                <p class="text-gray-600">Navigating adjustments can be exhausting. We make it completely stress-free with our proven structural damage resolution pipeline.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/60 relative">
+                    <span class="absolute -top-5 left-6 bg-brandBlue text-white w-10 h-10 rounded-full flex items-center justify-center font-black text-lg shadow-md">1</span>
+                    <h4 class="text-xl font-bold text-brandBlue mt-4 mb-2">Free Inspections</h4>
+                    <p class="text-gray-600 text-sm">We provide expert damage diagnosis to reveal structural anomalies standard adjusters often miss.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/60 relative">
+                    <span class="absolute -top-5 left-6 bg-brandBlue text-white w-10 h-10 rounded-full flex items-center justify-center font-black text-lg shadow-md">2</span>
+                    <h4 class="text-xl font-bold text-brandBlue mt-4 mb-2">Claim Advocacy</h4>
+                    <p class="text-gray-600 text-sm">We prepare meticulous documentation and negotiate directly with your carrier for full coverage approval.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/60 relative">
+                    <span class="absolute -top-5 left-6 bg-brandBlue text-white w-10 h-10 rounded-full flex items-center justify-center font-black text-lg shadow-md">3</span>
+                    <h4 class="text-xl font-bold text-brandBlue mt-4 mb-2">Elite Build Phase</h4>
+                    <p class="text-gray-600 text-sm">Our GAF Master Elite® crews execute rapid installations using pristine architectural materials.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/60 relative">
+                    <span class="absolute -top-5 left-6 bg-brandBlue text-white w-10 h-10 rounded-full flex items-center justify-center font-black text-lg shadow-md">4</span>
+                    <h4 class="text-xl font-bold text-brandBlue mt-4 mb-2">Final Sign-Off</h4>
+                    <p class="text-gray-600 text-sm">Comprehensive multi-point site cleanup and handover of premium long-term warranties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section id="testimonials" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlue">What Maryland Homeowners Say</h2>
+            <p class="text-gray-600">Verifiable, 5-star experiences from families who trusted us with their largest asset.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col justify-between">
+                <p class="text-gray-600 italic">"We had a terrible hail storm last year in MD. Our first inspection from our insurance carrier was turned down. Andrew from Capitol Insurance Restorations stepped in, re-inspected, found the deep hidden damage, and successfully fought for our approval. Today our roof is completed perfectly!"</p>
+                <div class="flex items-center gap-4 mt-6">
+                    <div class="w-12 h-12 bg-brandBlue text-white rounded-full flex items-center justify-center font-bold">CK</div>
+                    <div>
+                        <h5 class="font-bold text-brandBlue">C. K.</h5>
+                        <p class="text-xs text-gray-500">Maryland Homeowner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col justify-between">
+                <p class="text-gray-600 italic">"They handled our complex roof and gutter replacement beautifully, coordinating closely with our insurance adjusters and solar contractor to get the legwork done smoothly. Punctual, incredible cleanup, and immaculate communication throughout."</p>
+                <div class="flex items-center gap-4 mt-6">
+                    <div class="w-12 h-12 bg-brandBlue text-white rounded-full flex items-center justify-center font-bold">TM</div>
+                    <div>
+                        <h5 class="font-bold text-brandBlue">T. M.</h5>
+                        <p class="text-xs text-gray-500">Maryland Homeowner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Generation Intake Form Form -->
+    <section id="contact" class="bg-brandBlue text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto bg-white text-gray-900 rounded-2xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-brandGold w-32 h-32 rounded-full transform translate-x-10 -translate-y-10 opacity-20"></div>
+            
+            <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+                <h3 class="text-3xl font-black text-brandBlue">Schedule Your Free Structural Storm Damage Inspection</h3>
+                <p class="text-gray-600">Zero risks. Zero upfront commitment. Get an itemized validation blueprint for your property insurance provider.</p>
+            </div>
+
+            <form class="grid sm:grid-cols-2 gap-6" onsubmit="event.preventDefault(); alert('Inspection Request Logged!');">
+                <div class="space-y-1">
+                    <label class="text-xs uppercase tracking-wider font-bold text-gray-500">Full Name</label>
+                    <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-md focus:outline-none focus:border-brandBlue transition" placeholder="John Doe">
+                </div>
+                <div class="space-y-1">
+                    <label class="text-xs uppercase tracking-wider font-bold text-gray-500">Phone Number</label>
+                    <input type="tel" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-md focus:outline-none focus:border-brandBlue transition" placeholder="(410) 555-0199">
+                </div>
+                <div class="space-y-1 sm:col-span-2">
+                    <label class="text-xs uppercase tracking-wider font-bold text-gray-500">Property Address (Maryland Only)</label>
+                    <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-md focus:outline-none focus:border-brandBlue transition" placeholder="Street Address, City, Zip Code">
+                </div>
+                <div class="space-y-1 sm:col-span-2">
+                    <label class="text-xs uppercase tracking-wider font-bold text-gray-500">Primary Restorative Need</label>
+                    <select class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-md focus:outline-none focus:border-brandBlue transition text-gray-600">
+                        <option>Emergency Roof Leaks / Storm Hail Damage</option>
+                        <option>Siding & Gutters Replacement</option>
+                        <option>Commercial Renovations & Infrastructure</option>
+                        <option>General Property Consultation</option>
+                    </select>
+                </div>
+                <button type="submit" class="sm:col-span-2 w-full bg-brandAccent text-white font-bold text-xl py-4 rounded-md hover:bg-red-700 transition shadow-lg mt-2">
+                    Submit Inspection Request <i class="fa-solid fa-paper-plane ml-2 text-sm"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <span class="text-xl font-black text-white tracking-tight block">CAPITOL INSURANCE RESTORATIONS</span>
+                <p class="text-sm mt-1">MHIC License #111842 | VA License #2705160616 | PA License #157634</p>
+            </div>
+            <div class="text-sm">
+                <p>&copy; 2026 Capitol Insurance Restorations. All rights reserved.</p>
+                <p class="mt-1">Proudly Serving Millersville and Surrounding Maryland Localities.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Basic DOM Navigation Logic -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
