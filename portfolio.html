@@ -86,37 +86,7 @@ img{display:block;max-width:100%}
 .bracket{color:var(--accent);font-family:'JetBrains Mono',monospace}
 .cursor{color:var(--accent);animation:blink .8s infinite;font-family:'JetBrains Mono',monospace}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-.hero-bio{color:var(--muted);font-size:15px;line-height:1.8;max-width:460px;margin-bottom:28px}
-/* ======== MOBILE RESPONSIVENESS ======== */
-@media (max-width: 768px) {
-  .hero {
-    min-height: auto;
-    padding-top: calc(var(--nav-h, 60px) + 40px); /* Adjust based on your nav height */
-    padding-bottom: 60px;
-  }
-  
-  .hero-inner {
-    grid-template-columns: 1fr; /* Switch to a single column */
-    gap: 40px;
-    text-align: center; /* Center text on mobile */
-  }
-
-  .hero-title {
-    justify-content: center; /* Center the typing text flexbox */
-  }
-
-  .hero-bio {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-btns {
-    display: flex;
-    justify-content: center; /* Center the buttons */
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-}
+.hero-bio{color:var(--muted);font-size:15px;line-height:1.8;max-width:460px;margin-bottom:
 
 
 /* skills marquee */
@@ -314,6 +284,42 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:36px
   .footer-links{flex-wrap:wrap;justify-content:center}
   .proj-card{flex:0 0 100%}
 }
+/* ======== MOBILE RESPONSIVENESS ======== */
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: 120px; 
+    padding-bottom: 60px;
+  }
+  
+  .hero-inner {
+    display: flex !important;
+    flex-direction: column-reverse !important; /* Puts your photo on top. Change to 'column' if you want text on top */
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-title {
+    justify-content: center;
+  }
+
+  .hero-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  /* Make sure the image wrap shrinks nicely on smaller phones */
+  .img-wrap {
+    width: 280px; 
+    margin: 0 auto;
+  }
+}
+
+  
 </style>
 </head>
 <body>
